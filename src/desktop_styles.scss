@@ -1,0 +1,214 @@
+@media (min-width: 1080px) {
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bg-color);
+  }
+
+  .menu {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 auto;
+    animation: redirect 0.5s;
+  }
+
+  .item__not-found {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    p {
+      color: var(--text-color-main);
+      font-size: 20px;
+    }
+    span {
+      margin-top: 5%;
+      color: blue;
+      text-decoration: underline;
+    }
+  }
+
+  .products__title {
+    display: flex;
+    justify-content: center;
+    p {
+      margin-right: 5%;
+      color: var(--text-color-main);
+      align-self: flex-start;
+      font-size: 40px;
+      font-weight: bold;
+      margin-top: 2%;
+      margin-bottom: 7%;
+      margin-left: 3%;
+      outline: none;
+      padding: 1px;
+    }
+  }
+
+  .products__title-desktop {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 30px 0;
+  }
+
+  .products__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .product__item {
+      color: rgba(255, 255, 255, 0.7);
+      width: 300px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-bottom: 5%;
+      padding-bottom: 4%;
+      border-bottom: 0.5px solid var(--text-color-second);
+      .product__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+        margin-right: 5%;
+        p {
+          margin-bottom: 10px;
+        }
+        .p__title {
+          font-size: var(--text-size-main);
+          font-weight: bold;
+          outline: none;
+          color: var(--text-color-main);
+        }
+        .p__quantity {
+          font-size: 20px;
+          font-weight: bold;
+          color: var(--text-color-second);
+        }
+        .p__price {
+          margin-top: 2px;
+          font-size: 19px;
+          font-weight: normal;
+          font-family: arial;
+          color: var(--text-color-main);
+          padding: 2px 5px;
+          border-top: 2px solid var(--points-color);
+          border-bottom: 2px solid var(--points-color);
+        }
+      }
+      .product__img {
+        width: 270px;
+        height: 200px;
+        margin-right: 4%;
+        opacity: 1;
+        cursor: pointer;
+      }
+      .product__img:hover {
+        transform: scale(1.1);
+        transition: .2s;
+      }
+    }
+    .description {
+      display: none;
+    }
+    .about {
+      display: flex;
+      justify-content: center;
+      margin: 3%;
+      img {
+        width: 375px;
+        height: 300px;
+        margin-right: 3%;
+        border-radius: 10px;
+      }
+      .about__text {
+        display: flex;
+        flex-direction: column;
+      
+        span {
+          font-size: 45px;
+          font-weight: normal;
+          color: var(--text-color-main);
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 22px;
+          color: var(--text-color-second);
+        }
+      }
+    }
+  }
+  .decor {
+    display: none;
+  }
+
+  .bar {
+    text-align: center;
+    margin: 2.5% 0 6.5% 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--text-color-main);
+  }
+
+  .bar__conteiner {
+    .bar__title {
+      font-size: 40px;
+      text-align: center;
+      color: var(--text-color-main);
+      margin-top: 5%;
+      text-decoration: underline;
+    }
+    .bar__menu__list {
+      background-color: rgba(253, 248, 237, 0.7);
+      border-radius: 25px;
+      margin: 0 20%;
+      border: 5px double var(--text-color-main);
+      display: flex;
+      flex-direction: column;
+      padding: 10px 5% 10px 5%;
+      margin-bottom: 5%;
+      .bar__menu__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 2.5px;
+        div {
+          display: flex;
+        }
+        p {
+          color: var(--text-color-main);
+          padding-bottom: 1px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+        .b_quantity {
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes appearance {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+
+  @keyframes redirect {
+    0% {
+      opacity: 0;
+    }
+  }
+
+  .desktopMargin {
+    margin-top: -25%;
+  }
+}

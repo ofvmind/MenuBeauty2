@@ -1,0 +1,111 @@
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.pink {
+  background-color: rgb(78, 58, 62);
+}
+
+.orange {
+  background-color: orange;
+}
+
+@media (max-width: 576px) {
+  .redirect {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgb(82, 85, 102);
+    padding: 10px;
+    border-radius: 16px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .admin__page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+    flex: 1 1 auto;
+    color: #fff;
+    margin: 20% 3% 0 3%;
+    padding: 5% 0;
+    animation: redirect 0.5s;
+    .fonts__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: rgb(82, 85, 102);
+      border-radius: 10px;
+      margin: 5% 5%;
+      padding: 2.5%;
+      .select {
+        font-size: 25px;
+        margin-left: 5%;
+      }
+      .fonts__list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        .font__item {
+          font-size: 28px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 5px;
+          width: 30px;
+          height: 60px;
+          border-radius: 10px;
+          color: #fff;
+        }
+      }
+    }
+    .font-size__row {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: rgb(82, 85, 102);
+      border-radius: 10px;
+      margin: 0 5% 5% 5%;
+      padding: 5%;
+      .size__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .radio {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          outline: 3px solid green;
+          border: 5px solid rgb(82, 85, 102);
+          transition: .5s;
+        }
+      }
+    }
+    .theme__row {
+      margin-top: 5%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgb(82, 85, 102);
+      border-radius: 10px;
+      margin: 0 5% 5% 5%;
+      padding: 2.5%;
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}

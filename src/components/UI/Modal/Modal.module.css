@@ -1,0 +1,98 @@
+@media (min-width: 1080px) {
+  .modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    display: none;
+  }
+  
+  .modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: appearance .3s;
+  }
+  
+  .modal.hidden {
+    animation: dissapearance .3s;
+  }
+  
+  .modal__body {
+    width: 70%;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    overflow: auto;
+    animation: show .3s;
+    outline: 1px solid var(--text-color-main);
+  }
+  
+  .modal__body.hidden {
+    animation: hidden .3s;
+  }
+  
+}
+
+@media (max-width: 576px) {
+  .modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    display: none;
+  }
+
+  .modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: appearance 0.3s;
+  }
+
+  .modal.hidden {
+    animation: dissapearance 0.3s;
+  }
+
+  .modal__body {
+    margin: auto;
+    background-color: var(--bg-color);
+    width: 95%;
+    height: 80%;
+    border-radius: 5px;
+    overflow-y: auto;
+    animation: show 0.3s;
+    box-shadow: 0 0 10px #000;
+  }
+
+  .modal__body.hidden {
+    animation: hidden 0.3s;
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes dissapearance {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: translateY(200%);
+  }
+}
+
+@keyframes hidden {
+  100% {
+    transform: translateY(200%);
+  }
+}

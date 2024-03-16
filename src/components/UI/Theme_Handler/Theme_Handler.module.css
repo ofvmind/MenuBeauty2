@@ -1,0 +1,12 @@
+.icon {
+    width: 70px;
+    height: 70px;
+    animation: change .5s ease-in-out;
+}
+
+@keyframes change {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+}

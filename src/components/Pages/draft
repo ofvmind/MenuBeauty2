@@ -1,0 +1,28 @@
+<div className="admin__page">
+      <Link className="redirect" to="/">
+        Back to
+      </Link>
+      <div className="fonts__row">
+        <p className="select">Select font</p>
+        <ul className="fonts__list">
+          <li onClick={() => setFont("Anta")} className="font__item red">
+            Anta
+          </li>
+          <li onClick={() => setFont("arial")} className="font__item pink">
+            Arial
+          </li>
+          <li onClick={() => setFont("Madimi One")} className="font__item blue">
+            Madimi One
+          </li>
+          <li onClick={() => setFont("Poppins")} className="font__item green">
+            Poppins
+          </li>
+          <li
+            onClick={() => setFont("'Lobster', cursive")}
+            className="font__item purple"
+          >
+            Lobster
+          </li>
+        </ul>
+      </div>
+    </div>

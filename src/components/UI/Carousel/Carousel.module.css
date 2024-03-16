@@ -1,0 +1,35 @@
+@media (min-width: 1080px) {
+  .div {
+    padding: 30px 0;
+  }
+
+  .plate {
+    width: 600px;
+    height: 250px;
+    opacity: 1;
+    border-radius: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .div {
+    padding: 2px 0;
+  }
+
+  .plate {
+    width: 310px;
+    height: 130px;
+    opacity: 0.8;
+    border-radius: 12px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 10px;
+    outline: var(--shadow-model);
+  }
+}
